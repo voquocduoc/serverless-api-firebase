@@ -1,0 +1,37 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+    ".indexOn": "g",
+    "sales": {
+      ".indexOn": [
+        "g",
+        ".value",
+        "textSearch",
+        "uid",
+        "createdAt"
+      ]
+    },
+    "rents": {
+      ".indexOn": [
+        "g",
+        ".value",
+        "textSearch",
+        "uid",
+        "createdAt"
+      ]
+    },
+    "savedSearch": {
+      ".indexOn": "uid"
+    },
+    "messages": {
+      ".indexOn": "uid"
+    },
+    "roomschat": {
+      ".indexOn": "uid"
+    },
+    "wishlist": {
+      ".indexOn": "uid"
+    }
+  }
+}

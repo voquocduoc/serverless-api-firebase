@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "YOUR PROJECT ID"
+  },
+  "targets": {
+    "YOUR PROJECT ID": {
+      "hosting": {
+        "api": [
+          "api-lalaland"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "functions": {
+    "predeploy": [
+      "npm --prefix ./functions/ run lint",
+      "npm --prefix ./functions/ run build"
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "target": "api",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/v1/**",
+        "function": "webApi"
+      }
+    ]
+  }
+}
